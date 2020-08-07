@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Library)(type KiCad)(uri "/home/robert/Documents/Source code/soldeer-kits/Library/9V battery")(options "")(descr ""))
+  (lib (name "DJO logo")(type KiCad)(uri "/home/robert/Documents/Source code/soldeer-kits/Library/DJO logo")(options "")(descr ""))
+  (lib (name DJO_mechanical)(type KiCad)(uri "/home/robert/Documents/Source code/soldeer-kits/Library/Mechanisch/DJO_mechanical.pretty")(options "")(descr ""))
+)
