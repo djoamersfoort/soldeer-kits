@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:sirene-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -20,7 +19,7 @@ U 1 1 5EE3DF45
 P 3600 3250
 F 0 "BT1" H 3718 3346 50  0000 L CNN
 F 1 "9V" H 3718 3255 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 3600 3310 50  0001 C CNN
+F 2 "9v batterij:9v batterij" V 3600 3310 50  0001 C CNN
 F 3 "~" V 3600 3310 50  0001 C CNN
 	1    3600 3250
 	1    0    0    -1  

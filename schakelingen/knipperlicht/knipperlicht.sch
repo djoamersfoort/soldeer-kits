@@ -1,0 +1,227 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Knipperlicht"
+Date "2020-06-06"
+Rev "0.1"
+Comp "DJO Amersfoort"
+Comment1 ""
+Comment2 "Bron: hobbyprojecten.nl/projecten_pdf/knipperlicht.pdf"
+Comment3 ""
+Comment4 "Door: R. Paauw"
+$EndDescr
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5EDBCA13
+P 2650 2950
+F 0 "BT1" H 2768 3046 50  0000 L CNN
+F 1 "9V" H 2768 2955 50  0000 L CNN
+F 2 "9v batterij:9v batterij" V 2650 3010 50  0001 C CNN
+F 3 "~" V 2650 3010 50  0001 C CNN
+	1    2650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EDBE79C
+P 5000 2450
+F 0 "R3" H 4950 2400 50  0000 R CNN
+F 1 "10k" H 4950 2500 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4930 2450 50  0001 C CNN
+F 3 "~" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5EDBEAA1
+P 5300 2450
+F 0 "R4" H 5250 2400 50  0000 R CNN
+F 1 "470R" H 5250 2500 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5230 2450 50  0001 C CNN
+F 3 "~" H 5300 2450 50  0001 C CNN
+	1    5300 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5EDBED8B
+P 4400 3100
+F 0 "C2" V 4145 3100 50  0000 C CNN
+F 1 "47u" V 4236 3100 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4438 2950 50  0001 C CNN
+F 3 "~" H 4400 3100 50  0001 C CNN
+	1    4400 3100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5EDBF497
+P 5900 2900
+F 0 "C1" H 5700 3000 50  0000 L CNN
+F 1 "47u" H 5650 2850 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5938 2750 50  0001 C CNN
+F 3 "~" H 5900 2900 50  0001 C CNN
+	1    5900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EDBFCA7
+P 3750 2850
+F 0 "D1" V 3789 2732 50  0000 R CNN
+F 1 "LED 5mm" V 3698 2732 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 3750 2850 50  0001 C CNN
+F 3 "~" H 3750 2850 50  0001 C CNN
+	1    3750 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5EDC06D3
+P 5300 2850
+F 0 "D2" V 5339 2732 50  0000 R CNN
+F 1 "LED 5mm" V 5248 2732 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5300 2850 50  0001 C CNN
+F 3 "~" H 5300 2850 50  0001 C CNN
+	1    5300 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 5EDC141E
+P 5200 3350
+F 0 "Q2" H 5391 3396 50  0000 L CNN
+F 1 "BC547" H 5391 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5400 3275 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5200 3350 50  0001 L CNN
+	1    5200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2750 2650 2100
+Wire Wire Line
+	2650 3050 2650 3650
+Wire Wire Line
+	2650 3650 3750 3650
+$Comp
+L power:GND #PWR01
+U 1 1 5EDCECBB
+P 3750 3650
+F 0 "#PWR01" H 3750 3400 50  0001 C CNN
+F 1 "GND" H 3755 3477 50  0000 C CNN
+F 2 "" H 3750 3650 50  0001 C CNN
+F 3 "" H 3750 3650 50  0001 C CNN
+	1    3750 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 3650
+$Comp
+L Device:R R1
+U 1 1 5EDCF3CF
+P 3450 2450
+F 0 "R1" H 3520 2496 50  0000 L CNN
+F 1 "10k" H 3520 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3380 2450 50  0001 C CNN
+F 3 "~" H 3450 2450 50  0001 C CNN
+	1    3450 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2600 3450 3350
+Wire Wire Line
+	3750 2100 3750 2300
+Connection ~ 3750 2100
+Wire Wire Line
+	3750 2100 5000 2100
+Wire Wire Line
+	3750 2600 3750 2700
+Wire Wire Line
+	3750 3000 3750 3100
+Wire Wire Line
+	3750 3550 3750 3650
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 5EDC0B51
+P 3650 3350
+F 0 "Q1" H 3841 3396 50  0000 L CNN
+F 1 "BC547" H 3841 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3850 3275 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3650 3350 50  0001 L CNN
+	1    3650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3100 3750 3100
+Connection ~ 3750 3100
+Wire Wire Line
+	3750 3100 3750 3150
+Wire Wire Line
+	5000 3350 5000 3100
+Wire Wire Line
+	5000 2300 5000 2100
+Connection ~ 5000 2100
+Wire Wire Line
+	5000 2100 5300 2100
+Wire Wire Line
+	4550 3100 5000 3100
+Connection ~ 5000 3100
+Wire Wire Line
+	5000 3100 5000 2600
+Wire Wire Line
+	5300 3550 5300 3650
+Wire Wire Line
+	5300 3150 5300 3050
+Wire Wire Line
+	5300 2700 5300 2600
+Wire Wire Line
+	5300 2300 5300 2100
+Wire Wire Line
+	3450 2300 3450 2100
+Wire Wire Line
+	2650 2100 3450 2100
+Connection ~ 3450 2100
+Wire Wire Line
+	3450 2100 3750 2100
+Wire Wire Line
+	3450 3350 3100 3350
+Connection ~ 3450 3350
+Connection ~ 5300 3050
+Wire Wire Line
+	5300 3050 5300 3000
+Wire Wire Line
+	3750 3650 5300 3650
+$Comp
+L Device:R R2
+U 1 1 5EDBE3A8
+P 3750 2450
+F 0 "R2" H 3680 2404 50  0000 R CNN
+F 1 "470R" H 3680 2495 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3680 2450 50  0001 C CNN
+F 3 "~" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 3050 3100 3000
+Text GLabel 3100 3000 1    50   BiDi ~ 0
+TERUGKOPPELING
+Text GLabel 5900 2750 1    50   BiDi ~ 0
+TERUGKOPPELING
+$Comp
+L Device:R R5
+U 1 1 5EDEF960
+P 3100 3200
+F 0 "R5" H 3030 3154 50  0000 R CNN
+F 1 "0R" H 3030 3245 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3030 3200 50  0001 C CNN
+F 3 "~" H 3100 3200 50  0001 C CNN
+	1    3100 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 3050 5900 3050
+$EndSCHEMATC
