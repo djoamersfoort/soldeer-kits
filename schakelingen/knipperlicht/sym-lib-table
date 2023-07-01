@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "knipperlicht-rescue")(type "Legacy")(uri "${KIPRJMOD}/knipperlicht-rescue.lib")(options "")(descr ""))
+)
